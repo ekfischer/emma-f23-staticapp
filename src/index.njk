@@ -5,7 +5,7 @@
 <div class="row">
   <div class="col-md-12 text-center border-info mb-3">
 <div class="header">
-<h1>A pirate's life is for me</h1>
+<h1>Entries</h1>
   <p>
     Hempen halter mizzenmast deadlights gaff pillage starboard jack lee Blimey draught. Man-of-war piracy black jack sutler Yellow Jack keel provost overhaul execution dock rigging. Log quarterdeck dead men tell no tales red ensign gibbet grog blossom bilge Nelsons folly code of conduct gunwalls.
   </p>
@@ -13,21 +13,5 @@
 </div>
 </div>
 </div>
-
-<h1>Ships of the Golden Age of pirates</h1>
-  <div class="row">
-    {% for ship in pirates.ships %}
-    <div class="col-sm-6 col-lg-4">
-      <div class="card mb-4">
-        <div class="card-body">
-          <h5 class="card-title">{{ ship.ship_name }}</h5>
-            <h6 class="card-captain">{{ ship.captain }}</h6>
-          <p class="card-text">{{ ship.blurb }}</p>
-          <a href="{{ ship.source }}" target="_blank">Source</a>
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
 
 {% endblock %}
