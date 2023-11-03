@@ -14,8 +14,8 @@
             Entries
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            {% for blogs.blogs %}
-            <li><a class="dropdown-item" href="{{ relative_path }}books/{{ blogs.slug}}.html">{{ blogs.slug }}</a></li>
+            {% for entry in blog.blogs %}
+            <li><a class="dropdown-item" href="{{ relative_path }}blog/{{ entry.slug}}.html">{{ entry.headline }}</a></li>
             {% endfor %}
           </ul>
         </li>
